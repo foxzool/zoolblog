@@ -3,9 +3,6 @@ layout: default
 body: blog archive
 ---
 <div id="content">
-	<div id="blog-top">
-		<div id="change-view">Change view: <a id="list-view" href="#">List</a><a id="grid-view" href="#">Grid</a></div>
-	</div>
 	<div id="blog-posts">
 		{% for post in site.categories[page.category] %}
 		<div class="post{% if forloop.first %} first{% endif %}">
