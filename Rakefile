@@ -35,11 +35,11 @@ task :live do
 end
 
 def jekyll(opts = '')
-  if windows?
-    sh 'rmdir /s /q _site'
-    sh 'mkdir _site'
-  elsif
-    sh 'rm -rf _site'
-  end
+  # if windows?
+  #     sh 'rmdir /s /q _site'
+  #     sh 'mkdir _site'
+  #   elsif
+  #     sh 'rm -rf _site'
+  #   end
   sh 'jekyll ' + opts
 end
