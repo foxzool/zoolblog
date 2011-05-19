@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /
+
+# Page Title and Meta
+title: "ZoOL => Blog"
+#meta_description:
+#meta_keywords:
+
+# Used to apply a class to <body> and also for active states in navigation
+section: home
+
+---
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include home.html %}

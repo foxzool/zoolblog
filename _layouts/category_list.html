@@ -1,0 +1,16 @@
+---
+layout: default
+title: Categories
+---
+<div id="content">
+	{% for category in page.categories %}
+		<h4 class="item-list"><li><a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a></li></h4>
+	{% endfor %}
+</div><!-- end: #content-->
+
+
+<div id="sidebar">
+	{% include intro.markdown %}
+	{% include sidebar_tabs.markdown %}
+	
+</div><!-- end: #sidebar -->

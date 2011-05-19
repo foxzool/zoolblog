@@ -1,0 +1,33 @@
+# Andrew Disley: Front-end Skeleton
+# http://github.com/andrewdisley/front-end-skeleton
+
+# Minimal configuration see https://github.com/mojombo/jekyll/wiki/Configuration for full options
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:title
+markdown: rdiscount
+pygments: true
+safe: false
+
+# Author
+author: "Fox ZoOL"
+author_url: "http://ZoOL.me/"
+author_twitter: http://twitter.com/foxzool
+
+# Site Title, Site Name (used for compressed js) Site ID (used on <body> element), Domain, URLs, Google Analytics ID
+title: "ZoOL => Blog"
+name: "ZoOL-me"
+id: ZoOL-me
+domain: ZoOL.me
+url: /
+base_url: http://zool.me
+assets_url: /assets/
+#assets_cache_buster: ?v=0.1
+google_analytics_id: UA-XXXXX-XX
+
+# Set the environment used to include production specific assets and enable Google Analytics
+# development, staging, production
+env: production
+
+# Excluded files, jekyll excludes files that begin with an underscore
+exclude: ['.htaccess', 'README', 'Rakefile', 'Gemfile', 'Gemfile.lock']
