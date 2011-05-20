@@ -54,7 +54,6 @@
     <!--[if ! lte IE 6]><!-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='{{ site.assets_url }}js/libs/jquery-1.5.2.min.js'>\x3C/script>")</script>
-    <script src="{{ site.assets_url }}scripts/{{ site.name }}.js{{ site.assets_cache_buster}}"></script>
     <!--<![endif]-->{% endif %}{% if site.env == 'production' %}
     <script>
       var _gaq=[["_setAccount","{{ site.google_analytics_id }}"],["_trackPageview"]];
@@ -63,7 +62,7 @@
       s.parentNode.insertBefore(g,s)}(document,"script"));
     </script>{% endif %}
 	<script type="text/javascript">
-		if ($j('#disqus_thread').length) {
+		if ($('#disqus_thread').length) {
 			var disqus_shortname = 'zoolblog'; // required: replace example with your forum shortname
 			var disqus_identifier = '{{ page.url }}';
 			var disqus_url = '{{ site.base_url }}{{ page.url }}';
@@ -75,8 +74,8 @@
 				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
 				var commentCount = setInterval(function() {
-					if ($j('#dsq-num-posts').length) {
-						$j('.responses-number').html($('#dsq-num-posts').html());
+					if ($('#dsq-num-posts').length) {
+						$('.responses-number').html($('#dsq-num-posts').html());
 						clearInterval(commentCount);
 					}
 				}, 1000);

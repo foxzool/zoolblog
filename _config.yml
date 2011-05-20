@@ -20,7 +20,7 @@ name: "ZoOL-me"
 id: ZoOL-me
 domain: ZoOL.me
 url: /
-base_url: http://zool.me
+base_url: http://zool.me/
 assets_url: /assets/
 #assets_cache_buster: ?v=0.1
 google_analytics_id: UA-20255130-2
