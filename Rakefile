@@ -31,15 +31,15 @@ end
 desc 'Deploy to live, replaces live server with _site'
 task :live do
   jekyll
-#  sh 'rsync -rtzhv --delete _site/ server:/home/user/sites/domain.ext/public/'
+  sh 'rsync -rtzhv --delete _site/ zool@zool.me::zoolme'
 end
 
 def jekyll(opts = '')
-  # if windows?
-  #     sh 'rmdir /s /q _site'
-  #     sh 'mkdir _site'
-  #   elsif
-  #     sh 'rm -rf _site'
-  #   end
+  if windows?
+    sh 'rmdir /s /q _site'
+    sh 'mkdir _site'
+  elsif
+    sh 'rm -rf _site'
+  end
   sh 'jekyll ' + opts
 end
