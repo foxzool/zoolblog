@@ -1,6 +1,6 @@
 ---
 layout: post
-title: rails footnotes插件使用说明
+title: rails调试插件rails-footnotes使用说明
 category: rails
 tags: rails gem
 ---
